@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Lexend:wght@100..900&family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: radial-gradient(
+    circle,
+    rgba(30, 30, 30, 1) 0%,
+    rgba(0, 0, 0, 1) 80%
+  );
+  height: 100vh;
+  display: flex;
+}
+.image {
+  background-image: url(image/plate.jpeg);
+  background-size: cover;
+  object-fit: cover;
+  width: 50%;
+  height: 100vh;
+  order: 2;
+}
+.login {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #1c1f24;
+  color: aliceblue;
+  font-family: "Lexend", sans-serif;
+  border-radius: 10px;
+}
+.container h2 {
+  position: absolute;
+  top: 15px;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2.5px;
+}
+
+.container span:first-of-type {
+  margin: 35px 0 -10px -130px;
+}
+.container span:last-of-type {
+  margin: 10px 0 -10px -105px;
+}
+.container input {
+  border: none;
+  outline: none;
+  height: 28px;
+  border-radius: 3px;
+  padding: 5px;
+}
+button {
+  padding: 3px 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  border: none;
+  background-color: #d6360e;
+  color: white;
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  font-size: 13px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 25px;
+  object-fit: contain;
+}
+
+@media (max-width: 680px) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+  .image {
+    display: none;
+  }
+  .login {
+    width: 100%;
+  }
+}
